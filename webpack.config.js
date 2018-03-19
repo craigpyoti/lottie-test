@@ -7,6 +7,15 @@ module.exports= {
         path: path.resolve(__dirname, 'dist'),
         publicPath: 'dist',
     },
+    module: {
+        rules: [{
+            test: /\.js$/,
+            exclude: /(node_modules)/,
+            use: {
+                loader: 'babel-loader',
+            },
+        }],
+    },
     devServer: {
         compress: true,
         port: 4000

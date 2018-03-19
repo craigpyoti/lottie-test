@@ -7,6 +7,9 @@
     "start": "npx webpack-dev-server"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "file-loader": "^1.1.8",
     "json-loader": "^0.5.7",
     "lottie-web": "^5.1.7"
